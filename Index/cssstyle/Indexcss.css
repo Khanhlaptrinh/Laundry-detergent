@@ -1,0 +1,199 @@
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Top header*/
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.top-links a  {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.top-links a:hover {
+    color: #4CAF50;
+}
+
+/*Main header*/
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 15px;
+    background-color: #7fffd4;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #333;
+    width: 250px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.search-bar button:hover {
+    background-color: #3e8e41;
+}
+
+
+.contact-info .contact-btn {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contact-info .contact-btn:hover {
+    background-color: #3e8e41;
+}
+
+/*Navigation bar*/
+.nav-bar {
+    background-color: #2D9C43;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-bar ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.nav-bar li {
+    float: left;
+}
+
+.nav-bar a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Tổng thể container*/
+.content-container {
+    display: flex;
+    max-width: 100%;
+    background-color: rgb(158, 158, 250);
+    padding: 20px;
+    color: #fff;
+}
+
+/* Phần sản phẩm bên trái */
+.product-display {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Phần sản phẩm bên phải */
+.news-section {
+    flex: 1;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.news-header hh2 {
+    color: #4CAF50;
+    font-size: 20px;
+}
+
+.news-header a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.news-header a:hover {
+    color: #4CAF50;
+}
+
+/*Moi ban tin tuc*/
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.news-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.news-content h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.news-content p {
+    font-size: 12px;
+    color: #aaa;
+}
