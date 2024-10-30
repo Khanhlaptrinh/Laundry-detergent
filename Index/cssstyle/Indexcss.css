@@ -261,7 +261,7 @@ p {
     color: #ffffff;
     text-decoration: none;
     border-radius: 50rem;
-    font-size: 10px;
+    font-size: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -269,6 +269,92 @@ p {
     background-color: #218838;
 }
 
+/* Products */
+.best-seller {
+    max-width: 1200px;
+    margin: 20px  auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.best-seller h2 {
+    color: #2fa54d;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: warp;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.product-card .discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #2fa54d;
+    color: #ffff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-card .product-name {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.product-card .old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 5px;
+}
+
+.product-card .new-price {
+    color: #e91e63;
+}
+
+.product-card .add-to-cart {
+    background-color: #2fa54d;
+    color: #ffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #238a3e;
+}
 /* Responsive design topheader mobile phone */
 @media (max-width: 768px) {
     .top-bar {
