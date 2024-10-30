@@ -120,17 +120,18 @@
 }
 
 
-/* Tổng thể container */
-/* .content-container {
+/* Tổng thể container*/
+.content-container {
     display: flex;
     max-width: 100%;
     background-color: whitesmoke;
     padding: 20px;
     color: black;
-} */
+    flex-wrap: wrap;
+}
 
 /* Phần sản phẩm bên trái */
-/* .product-display {
+.product-display {
     flex: 2;
     margin-right: 20px;
 }
@@ -138,10 +139,10 @@
 .product-image {
     width: 100%;
     border-radius: 8px;
-} */
+}
 
 /* Phần sản phẩm bên phải */
-/* .news-section {
+.news-section {
     flex: 1;
     background-color: white;
     padding: 15px;
@@ -157,7 +158,7 @@
     margin-bottom: 15px;
 }
 
-.news-header hh2 {
+.news-header h2 {
     color: #4CAF50;
     font-size: 20px;
 }
@@ -170,10 +171,10 @@
 
 .news-header a:hover {
     color: #4CAF50;
-} */
+}
 
-/*Moi ban tin tuc*/
-/* .news-item {
+/* Mỗi bản tin */
+.news-item {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -196,4 +197,144 @@
 .news-content p {
     font-size: 12px;
     color: black;
-} */
+}
+
+/* Introduct */
+.container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product-item {
+    width: 30%;
+    background-color: #ffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item h2 {
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50rem;
+    font-size: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive design topheader mobile phone */
+@media (max-width: 768px) {
+    .top-bar {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: black;
+    }
+
+    .top-bar span {
+        color: gray;
+        font-size: 14px;
+    }
+
+    .top-links {
+        display: none;
+    }
+}
+
+/* Responsive design nav-bar mobile phone */
+@media (max-width: 768px) {
+    .search-bar, .contact-info {
+        display: none; /* Hide search and contact info on mobile */
+    }
+
+    .main-header {
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    .bi-list {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        color: black;
+        padding: 10px;
+    }
+
+    .nav-bar ul {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        background-color: #2D9C43;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-bar ul.show {
+        display: flex; /* Show menu when toggled */
+    }
+}
+
+/* Responsive cho màn hình nhỏ (dưới 768px) */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Chuyển sang dạng cột cho màn hình nhỏ */
+        padding: 10px;
+    }
+
+    .product-display {
+        width: 100%; /* Để sản phẩm chiếm toàn bộ chiều rộng */
+        margin-right: 0;
+    }
+
+    .news-section {
+        display: none; /* Ẩn phần tin tức trên màn hình nhỏ */
+    }
+}

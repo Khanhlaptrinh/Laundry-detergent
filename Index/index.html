@@ -35,6 +35,7 @@
                     <button class="contact-btn">Hoteline: 0965.999.155</button>
                 </div>
             </div>
+            <i class="bi bi-list"></i>
         </div>
 
         <!-- Menu -->
@@ -54,14 +55,14 @@
     </header>
 
     <!-- Tin tức và banner -->
-    <!-- <section class="content-container">
+    <section class="content-container">
         <!-- Phần hiển thị sản phẩm lớn -->
-        <!-- <div class="product-display">
+        <div class="product-display">
             <img src="../Image/Banner/banner2.jpg" alt="Sản phẩm asahi" class="product-image">
-        </div> -->
+        </div>
 
         <!-- Phần tin tức bên phải -->
-        <!-- <div class="news-section">
+        <div class="news-section">
             <h2>TIN TỨC</h2>
             <a href="#">Xem Thêm &gt;</a>
             <div class="news-item">
@@ -92,7 +93,58 @@
                     <p>Tin tức admin</p>
                 </div>
             </div>
-        </div> -->
-    </section> -->
+        </div>
+    </section>
+
+    <!-- introduction asahi -->
+    <div class="container">
+        <h2>Giới thiệu về Asahi</h2>
+        <p>
+            <strong>Asahi</strong> là một thương hiệu bao gồm các sản phẩm: Nước Lau Sàn, Nước Rửa Chén & Nước Giặt Xả Vải... 
+            Các sản phẩm này là thành quả của quá trình nghiên cứu và lòng nhiệt huyết có lương tâm của các Kỹ Sư Hóa trong và ngoài nước. 
+            Nước lau sàn, nước rửa chén & nước giặt xả được sản xuất trực tiếp bởi chính các kỹ sư bằng dây chuyền bán tự động. 
+            Hơn nữa, nó được sản xuất bởi những con người khát khao mang những sản phẩm không độc hại đến người tiêu dùng, như một cách thức mang sứ điệp yêu thương gửi đến với tha nhân ngày nay.
+        </p>
+
+        <div class="product-list">
+            <div class="product-item">
+                <img src="../Image" alt="Nuoc giat Asahi">
+                <h3>Nươc Giặt Asahi</h3>
+                <p>Sản phẩm vừa kết hợp công nghệ giặt vừa kết hợp xả quần áo</p>
+                <a href="#"><button class="btn">xem chi tiết</button></a>
+            </div>
+
+            <div class="product-item">
+                <img src="" alt="Nuoc giat Asahi">
+                <h3>Nước Lau Sàn Asahi</h3>
+                <p>Sản phẩm vừa kết hợp công nghệ giặt vừa kết hợp xả quần áo</p>
+                <a href="#"><button class="btn">xem chi tiết</button></a>
+            </div>
+
+            <div class="product-item">
+                <img src="" alt="Nuoc giat Asahi">
+                <h3>Nước Rửa Bát Asahi</h3>
+                <p>Sản phẩm vừa kết hợp công nghệ giặt vừa kết hợp xả quần áo</p>
+                <a href="#"><button class="btn">xem chi tiết</button></a>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    //Toggle menu visibility on mobile
+    const menuToggle = document.querySelector('.bi-list');
+    const navBar = document.querySelector('.nav-bar ul');
+
+    menuToggle.addEventListener('click', () => {
+        navBar.classList.toggle('show');
+    })
+
+    //close the menu when a link is clicked
+    const navLinks = document.querySelector('.nav-bar a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navBar.classList.remove('show');
+        })
+    });
+</script>
 </html>
