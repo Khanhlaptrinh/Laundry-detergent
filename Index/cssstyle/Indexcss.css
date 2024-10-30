@@ -7,8 +7,8 @@
 
 /* Top header*/
 .top-bar {
-    background-color: #333;
-    color: white;
+    background-color: black;
+    color: gray;
     padding: 5px 15px;
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@
 }
 
 .top-links a  {
-    color: white;
+    color: gray;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 15px 15px;
-    background-color: #7fffd4;
+    background-color: white;
     color: white;
 }
 
@@ -56,10 +56,10 @@
 
 .search-bar input {
     padding: 10px;
-    border: none;
+    border: 1px solid black;
     outline: none;
     color: white;
-    background: #333;
+    background: #ffffff;
     width: 250px;
 }
 
@@ -120,17 +120,17 @@
 }
 
 
-/* Tổng thể container*/
-.content-container {
+/* Tổng thể container */
+/* .content-container {
     display: flex;
     max-width: 100%;
-    background-color: rgb(158, 158, 250);
+    background-color: whitesmoke;
     padding: 20px;
-    color: #fff;
-}
+    color: black;
+} */
 
 /* Phần sản phẩm bên trái */
-.product-display {
+/* .product-display {
     flex: 2;
     margin-right: 20px;
 }
@@ -138,12 +138,12 @@
 .product-image {
     width: 100%;
     border-radius: 8px;
-}
+} */
 
 /* Phần sản phẩm bên phải */
-.news-section {
+/* .news-section {
     flex: 1;
-    background-color: #222;
+    background-color: white;
     padding: 15px;
     border-radius: 8px;
 }
@@ -170,10 +170,10 @@
 
 .news-header a:hover {
     color: #4CAF50;
-}
+} */
 
 /*Moi ban tin tuc*/
-.news-item {
+/* .news-item {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -189,11 +189,11 @@
 .news-content h3 {
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
+    color: black;
     margin-bottom: 5px;
 }
 
 .news-content p {
     font-size: 12px;
-    color: #aaa;
-}
+    color: black;
+} */
